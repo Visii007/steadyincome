@@ -16,8 +16,8 @@ describe('My First Test Suite', () => {
         cy.get('#importButton').click()
         cy.get('#terms_steps').check()
         cy.get('.CTA_KYC > .login_CTA').click()
-        cy.get('#checkboxarea').check()
-        cy.get('#terms2').check()
+        cy.get('#terms_steps').check()
+        cy.get('.CTA_KYC > .login_CTA').click()
         cy.get('#proceed_investment').click()
 
     })

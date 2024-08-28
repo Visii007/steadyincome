@@ -14,7 +14,7 @@ describe('My First Test Suite', () => {
         // Wait for the loader to disappear (indicating the API call has completed)
         cy.get('.record_loader').should('not.be.visible');
         
-        cy.get('.first_bond_CTA > .button').click()
+        cy.get(':nth-child(1) > .card > .top_fractional_sec_area > .right_fractional_sec_area > .fractional_sec_area_CTA2 > .fractional_sec_area_CTA2_new > .first_bond_CTA > .button').click()
 
         const fileName = 'files/DEFPP6010H_1723532338.zip';
         cy.get('input[id="importFile"]').attachFile(fileName);
@@ -23,9 +23,9 @@ describe('My First Test Suite', () => {
         cy.get('#terms_steps').check()
         cy.get('.CTA_KYC > .login_CTA').click()
         cy.get('#terms').check()
-         cy.get('#terms2').check()
-         cy.get('#proceed_investment').click()
-         cy.get('.swal2-confirm').click()
+        cy.get('#terms2').check()
+        cy.get('#proceed_investment').click()
+        cy.get('.swal2-confirm').click()
 
     })
 })

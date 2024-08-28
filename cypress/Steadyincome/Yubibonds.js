@@ -21,6 +21,8 @@ describe('My First Test Suite', () => {
         cy.get('#terms_steps').check()
         cy.get('.CTA_KYC > .login_CTA').click()
 
+        
+
 
         // Ensure the cypress-file-upload plugin is installed and imported in cypress/support/commands.js
         // import 'cypress-file-upload';
